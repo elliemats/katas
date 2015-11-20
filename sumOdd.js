@@ -1,18 +1,14 @@
-/*
-DESCRIPTION: 
-
-Given the triangle of consecutive odd numbers:
-             1
-          3     5
-       7     9    11
-   13    15    17    19
-21    23    25    27    29
-...
-
-Calculate the row sums of this triangle from the row index (starting at index 1) e.g.:
-  rowSumOddNumbers(1); // 1
-  rowSumOddNumbers(2); // 3 + 5 = 8
-*/
-
 /* ******************* Ellie's Solution ******************* */
 
+/**
+  * @ Description - [rowSumOddNumbers] - Calculate sum of triangle from row index.
+  * @ Params - {number} - [i] - row index
+  * @ Output - {number} - [sum] - sum of odd numbers in that row
+*/
+
+function rowSumOddNumbers(i) {
+  if (i % 1) return 'Invalid row. Input a whole number.';
+  
+  var sum = Math.pow(i, 3);
+  return sum;
+}

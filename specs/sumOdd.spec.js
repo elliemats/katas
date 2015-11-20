@@ -1,6 +1,6 @@
 /* global , describe, it, expect, should */
 
-describe('rowSumOddNumbers(i)', function () {
+describe('TEST: rowSumOddNumbers(i)', function () {
   'use strict';
 
   it('should be a function', function () {
