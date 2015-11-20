@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Turkey Test Trotter</title>
+    <link rel="stylesheet" href="assets/bower_components/mocha/mocha.css">
+  </head>
+  <body>
+    <h1 text-align="center">The Great Turkey Trot</h1>
+    <h6>A simple browser-based Mocha test runner.</h6>
+    <div id="mocha"></div>
+    
+    <div></div>
+
+    <script src="assets/bower_components/mocha/mocha.js"></script>
+    <script>mocha.setup('')</script>
+    <script src="assets/bower_components/chai/chai.js"></script>
+    <script>
+      var assert = chai.assert;
+      var expect = chai.expect;
+      var should = chai.should();
+    </script>
+
+    <!-- algorithm file(s) -->
+    <script src="sumOdd.js"></script>
+
+    <!-- spec file(s) -->
+    <script src="specs/sumOdd.spec.js"></script>
+
+    <script>mocha.run()</script>
+  </body>
+</html>
